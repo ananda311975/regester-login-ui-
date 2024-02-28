@@ -33,12 +33,12 @@ export default function RegisterForm() {
   }
 
   return (
-  <div className="p-5 border w-1/3 min-w-[300px] mx-auto rounded-[15px] mt-8 bg-zinc-200 shadow-md">
-    <div className="font-bold text-2xl mb-5 text-center">Register</div>
+  <div className="p-5 border w-1/3 min-w-[300px] mx-auto rounded-[15px] mt-8 bg-stone-500 shadow-md">
+    <div className="font-bold text-2xl mb-5 text-center text-teal-100">Register</div>
     <form className="flex flex-col gap-4 items-center" onSubmit={hdlSubmit}>
       <label className="w-full max-w-xs">
         <div className="label">
-          <span className="label-text">Username</span>
+          <span className="label-text text-black">Username</span>
         </div>
         <input
           type="text"
@@ -50,7 +50,7 @@ export default function RegisterForm() {
       </label>
       <label className="w-full max-w-xs">
         <div className="label">
-          <span className="label-text">E-mail</span>
+          <span className="label-text text-black ">E-mail</span>
         </div>
         <input
           type="email"
@@ -60,9 +60,23 @@ export default function RegisterForm() {
           onChange={hdlChange}
         />
       </label>
+     
+ 
       <label className="w-full max-w-xs">
         <div className="label">
-          <span className="label-text">Password</span>
+          <span className="label-text text-black ">Phone</span>
+        </div>
+        <input
+          type="phone"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-opacity-50"
+          name="phone"
+          value={input.phone}
+          onChange={hdlChange}
+        />
+      </label>
+      <label className="w-full max-w-xs">
+        <div className="label">
+          <span className="label-text text-black ">Password</span>
         </div>
         <input
           type="password"
@@ -74,7 +88,7 @@ export default function RegisterForm() {
       </label>
       <label className="w-full max-w-xs">
         <div className="label">
-          <span className="label-text">Confirm Password</span>
+          <span className="label-text text-black ">Confirm Password</span>
         </div>
         <input
           type="password"
@@ -84,21 +98,9 @@ export default function RegisterForm() {
           onChange={hdlChange}
         />
       </label>
-      <label className="w-full max-w-xs">
-        <div className="label">
-          <span className="label-text">Phone</span>
-        </div>
-        <input
-          type="password"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-opacity-50"
-          name="confirmPassword"
-          value={input.phone}
-          onChange={hdlChange}
-        />
-      </label>
       <div className="flex gap-5 mt-7">
-        <button type="submit" className="font-bold text-sm bg-stone-700 text-white py-2 px-4 rounded-[10px] hover:bg-emerald-700 transition duration-300">Submit</button>
-        <button type="reset" className="w-20 font-bold text-sm bg-stone-700 text-white py-2 px-4 rounded-[10px] hover:bg-yellow-600 transition duration-300">Reset</button>
+        <button type="submit" className="font-bold text-sm bg-stone-700 text-white py-2 px-4 rounded-[10px] hover:bg-cyan-500 transition duration-300">Submit</button>
+        <button type="reset" className="w-20 font-bold text-sm bg-stone-700 text-white py-2 px-4 rounded-[10px] hover:bg-orange-400 transition duration-300">Reset</button>
       </div>
     </form>
   </div>

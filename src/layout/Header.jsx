@@ -23,9 +23,9 @@ export default function Header() {
   }
 
   return (
-    <div className="navbar bg-stone-700 ">
+    <div className="navbar bg-stone-700"  >
       <div className="flex-1">
-        <a className="btn btn-ghost text-3xl text-white">FAYLINN </a> 
+        <a className="btn btn-ghost text-3xl text-white">GAIJIN TEM </a> 
         {/* {user?.id ? user.username : 'Guest'} */}
       </div>
       <div className="flex-none">
@@ -43,5 +43,7 @@ export default function Header() {
         </ul>
       </div>
     </div>
+
+    
   );
 }
